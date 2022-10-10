@@ -15,7 +15,7 @@ public class Banane extends FruitSimple {
 	
     public Banane() 
     {
-        this.prix = 0.5;  //prix en euros
+        this.prix = 1.8;  //prix en euros
         this.origine="Espagne";
     }
     
