@@ -41,7 +41,7 @@ public abstract class FruitSimple implements Fruit{
         
     @Override
     public String toString(){
-        return "Orange de " + origine + " a " + prix + " euros";
+        return "Fruit venant de " + origine + " a " + prix + " euros";
     }
     
     

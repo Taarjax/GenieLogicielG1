@@ -3,7 +3,7 @@ package model;
  *
  * @author roudet
  */
-public class Orange implements Fruit{
+public class Orange extends FruitSimple{
     private double prix;
     private String origine;
 	

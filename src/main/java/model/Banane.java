@@ -50,7 +50,7 @@ public class Banane extends FruitSimple {
 
     @Override
     public String toString(){
-        return "Orange de " + origine + " a " + prix + " euros";
+        return "Banane de " + origine + " a " + prix + " euros";
     }
 
     @Override

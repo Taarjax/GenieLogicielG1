@@ -14,8 +14,8 @@ public class Cerise extends FruitSimple{
 	
     public Cerise() 
     {
-        this.prix = 0.5;  //prix en euros
-        this.origine="Espagne";
+        this.prix = 1.5;  //prix en euros
+        this.origine="France";
     }
     
     public Cerise(double prix, String origine) 
@@ -46,14 +46,15 @@ public class Cerise extends FruitSimple{
     public void setOrigine(String origine){
 	this.origine=origine;
     }
-
+    
+    
     @Override
     public String toString(){
-        return "Orange de " + origine + " a " + prix + " euros";
+        return "Cerise de " + origine + " a " + prix + " euros";
     }
 
     @Override
-    public boolean equals(Object o){  //predicat pour tester si 2 oranges sont equivalentes
+    public boolean equals(Object o){  //predicat pour tester Espagnesi 2 oranges sont equivalentes
         if(o != null && getClass() == o.getClass()){
             Orange or = (Orange) o;
             return (prix == or.prix && origine.equals(or.origine));
