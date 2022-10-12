@@ -3,7 +3,6 @@ import controller.TestUtils;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import model.Panier;
-import vue.VueSwing;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -13,17 +12,18 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import vue.VueGComplete;
 /**
  *
  * @author cd554979
  */
 public class TestVueSwing {
-    private static VueSwing vueg;
+    private static VueGComplete vueg;
     private Panier m;
     
     @Before
     public void setUp() {
-        vueg = new VueSwing();
+        vueg = new VueGComplete();
         m = new Panier(3);
     }
     

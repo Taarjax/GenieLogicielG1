@@ -8,6 +8,8 @@ import java.awt.Component;
 import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
 import javax.swing.JTextArea;
+import model.Banane;
+import model.Cerise;
 import model.Orange;
 
 /**
@@ -30,8 +32,10 @@ public class ControlleurComplet extends Controlleur {
                         super.m.ajout(new Orange());
                         break;
                     case "Cerise":
+                        super.m.ajout(new Cerise());
                         break;
                     case "Banane":
+                        super.m.ajout(new Banane());
                         break;
                 }
                 txt = super.m.toString();

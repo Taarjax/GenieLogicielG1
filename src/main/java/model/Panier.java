@@ -81,9 +81,21 @@ public class Panier {
 
     @Override
     public String toString(){  //affichage de ce qui est contenu dans le panier : liste des fruits presents
-        String str ="";
+        String str ="Panier de "+getTaille()+" fruits : "+getPrix()+" €\n";
+        Map<String,Integer> p = new HashMap<String, Integer>();
         for (Fruit fruit : fruits) {
-            str += fruit.toString() + "\n";
+            if(p.get(fruit.toString())==null)
+            {
+                p.put(fruit.toString(), 1);
+            }
+            else
+            {
+                p.put(fruit.toString(), p.get(fruit.toString())+1);
+            }
+        }
+        for(String k : p.keySet())
+        {
+            str+=k+" : "+p.get(k)+"\n";
         }
         return str;
     }

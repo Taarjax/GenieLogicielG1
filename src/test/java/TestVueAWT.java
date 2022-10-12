@@ -4,7 +4,6 @@ import java.awt.Button;
 import java.awt.Label;
 import java.awt.event.ActionEvent;
 import model.Panier;
-import vue.VueAWT;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -14,17 +13,18 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import vue.VueGSimple;
 /**
  *
  * @author cd554979
  */
 public class TestVueAWT {
-    private static VueAWT vueg;
+    private static VueGSimple vueg;
     private Panier m;
 
     @Before
     public void setUp() {
-        vueg = new VueAWT();
+        vueg = new VueGSimple();
         m = new Panier(3);
     }
     
