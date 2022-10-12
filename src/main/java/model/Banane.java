@@ -1,19 +1,25 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package model;
+
 /**
  *
- * @author roudet
+ * @author ma618349
  */
-public class Orange extends FruitSimple{
+public class Banane extends FruitSimple {
+    
     private double prix;
     private String origine;
 	
-    public Orange() 
+    public Banane() 
     {
-        this.prix = 0.5;  //prix en euros
+        this.prix = 1.8;  //prix en euros
         this.origine="Espagne";
     }
     
-    public Orange(double prix, String origine) 
+    public Banane(double prix, String origine) 
     {
 	if(prix < 0)
 	    this.prix = -prix;  //une solution possible pour interdire les prix negatifs
@@ -44,7 +50,7 @@ public class Orange extends FruitSimple{
 
     @Override
     public String toString(){
-        return "Orange de " + origine + " a " + prix + " euros";
+        return "Banane de " + origine + " a " + prix + " euros";
     }
 
     @Override
@@ -59,4 +65,5 @@ public class Orange extends FruitSimple{
     public boolean isSeedless() {  //predicat indiquant qu'une orange a des pepins
         return false;
     }
+    
 }
