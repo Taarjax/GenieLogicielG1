@@ -38,7 +38,7 @@ public class ControlleurComplet extends Controlleur {
             }
             else
             {
-                super.m.retrait();
+                super.m.retire();
                 txt = super.m.toString();
             }
             c.setText(txt);

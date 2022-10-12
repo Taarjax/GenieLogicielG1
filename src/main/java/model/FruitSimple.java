@@ -13,15 +13,21 @@ public abstract class FruitSimple implements Fruit{
     private String origine ; 
     
     public FruitSimple(double prix , String origine){
-        this.prix = prix ; 
-        this.origine = origine ; 
+        if(prix<0)
+            this.prix = -prix ;
+        else
+            this.prix = prix;
+        if(!origine.isBlank())
+            this.origine = origine ; 
+        else
+            this.origine = "Espagne";
     }
     
       public double getPrix(){
           return this.prix ;
       }
       
-      public String getOrigne(){
+      public String getOrigine(){
           return this.origine ; 
       }
       
@@ -32,7 +38,7 @@ public abstract class FruitSimple implements Fruit{
       @Override
       public boolean equals(Object o){
             if(o != null && getClass() == o.getClass()){
-            Orange or = (Orange) o;
+            FruitSimple or = (FruitSimple) o;
             return (prix == or.prix && origine.equals(or.origine));
         }
         return false;
@@ -41,7 +47,7 @@ public abstract class FruitSimple implements Fruit{
         
     @Override
     public String toString(){
-        return "Fruit venant de " + origine + " a " + prix + " euros";
+        return " de " + origine + " a " + prix + " euros";
     }
     
     

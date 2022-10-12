@@ -25,7 +25,7 @@ public class ControlleurSimple extends Controlleur{
             }
             else
             {
-                super.m.retrait();
+                super.m.retire();
                 c.setText(super.m.getTaille()+"");
             }
         }catch(Exception ex)
