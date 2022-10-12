@@ -8,6 +8,6 @@ package vue;
  *
  * @author cd554979
  */
-public interface VueGraphique {
+public interface VueGraphique{
     
 }

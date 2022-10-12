@@ -31,23 +31,19 @@ public class TP2 {
     }
     
     public static void main(String[] args) {
-        File f = new File("src/main/resources/beans.xml");
-        System.out.println(f.exists());
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        TP2 test = (TP2)context.getBean("MVC");
-        test.setVueg( (VueGraphique)context.getBean("VueG") );
+        VueGSimple vg = new VueGSimple();
+        ControlleurSimple cs = new ControlleurSimple();
+        Panier p = new Panier(5);
+        cs.setVue(vg);
+        cs.setModele(p);
+        vg.setControlleur(cs);
+        vg.setVisible(true);
         /*System.out.println("Hello World!");
         Panier p = new Panier(5);
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new VueSwing(p).setVisible(true);
             }
-        });
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VueAWT(p).setVisible(true);
-            }
-        });
-        */
+        });*/
     }
 }
