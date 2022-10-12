@@ -21,12 +21,12 @@ public class ControlleurSimple extends Controlleur{
             if(((Component)e.getSource()).getName().equals("Plus")) 
             {
                 super.m.ajout(new Orange());
-                c.setText(super.m.getTaillePanier()+"");
+                c.setText(super.m.getTaille()+"");
             }
             else
             {
                 super.m.retrait();
-                c.setText(super.m.getTaillePanier()+"");
+                c.setText(super.m.getTaille()+"");
             }
         }catch(Exception ex)
         {
