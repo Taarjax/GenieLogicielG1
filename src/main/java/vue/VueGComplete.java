@@ -10,7 +10,7 @@ import controller.ControlleurComplet;
  *
  * @author cd554979
  */
-public class VueGComplete extends javax.swing.JFrame {
+public class VueGComplete extends javax.swing.JFrame implements VueGraphique {
 
     /**
      * Creates new form VueGComplete

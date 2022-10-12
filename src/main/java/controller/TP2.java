@@ -31,8 +31,8 @@ public class TP2 {
     }
     
     public static void main(String[] args) {
-        VueGSimple vg = new VueGSimple();
-        ControlleurSimple cs = new ControlleurSimple();
+        VueGComplete vg = new VueGComplete();
+        ControlleurComplet cs = new ControlleurComplet();
         Panier p = new Panier(5);
         cs.setVue(vg);
         cs.setModele(p);
